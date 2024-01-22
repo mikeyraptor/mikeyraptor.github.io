@@ -23,7 +23,7 @@
         }
 
         .image {
-          background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.etsystatic.com%2F21119077%2Fr%2Fil%2Ffe72a8%2F4931883679%2Fil_fullxfull.4931883679_p7ha.jpg&tbnid=Y98ZoqV5E8_NyM&vet=12ahUKEwj9t9CmuPGDAxVNuYkEHUSdDb4QMygAegQIARBR..i&imgrefurl=https%3A%2F%2Fwww.etsy.com%2Flisting%2F1462664296%2Fdj-jesus-at-turntable-poster-print-wall&docid=8y8v-IFnb4ozOM&w=2000&h=3000&q=jesus%20dj%20pictures&ved=2ahUKEwj9t9CmuPGDAxVNuYkEHUSdDb4QMygAegQIARBR");
+          background-image: url(" ");
           background-size: cover;
           background-position: center;
           width: 250px;
@@ -109,6 +109,47 @@
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
   </head>
   <body>
+
+    <!-- Video at top Main -->
+
+    <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="test.mp4" type="video/mp4">
+    <source src="test.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="MikeyRaptor &hearts;" target="_blank">Holler Hooligans</a>.</p>
+    
     <!-- Content container -->
     <div class="container">
 
